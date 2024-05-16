@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>server-side-rendering</title>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+
+    <div class="main">
+
+
+        <nav class="nav">
+            <a href="/">Home</a>
+            <a href="/read">Users</a>
+            <a href=""></a>
+        </nav>
+
+        <h1>Create User:</h1>
+
+        <% users.forEach(function(user){ %>
+
+            <div class="users">
+                <div class="user">
+                    <div class="img">
+                        <img src="<%= user.image %>" alt="">
+                    </div>
+                    <h3><%= user.name %></h3>
+                    <h5><%= user.email %></h5>
+                    <div class="options">
+                        <a href="/edit/<%= user._id %>" class="edit">Edit User</a>
+                        <a href="/delete/<%= user._id %>" class="delete">Delete User</a>
+                    </div>
+                </div>
+
+        <% }) %>
+
+            
+
+
+        </div>
+    </div>
+
+    
+
+    <script src="/javascript/script.js"></script>
+</body>
+</html>

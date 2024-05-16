@@ -1,0 +1,18 @@
+--------------------DATABASES------------------
+Database is a place where we store all types of information including photos videos files audios and all large and heavy files.
+There are two types of DATABASES:
+SQL
+NoSQL
+------------------------------------------------
+Database -> collection ->Documents
+------------------------------------------------
+but in code:
+code                 database
+------------------------------------------------
+mangoos.create  ->  creation of Database
+model create    ->  creation of collection
+CREATE          ->  creation of Documents
+
+
+findOne() :read file in state of object
+find()  : read file in the state of array
